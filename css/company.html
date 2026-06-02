@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <style>
+         header{
+            position: fixed;
+            top: 0;
+            left: 0;   
+         }
+         img{
+            float: left;
+            margin-top: 80px;
+           
+         }
+            div.container{
+                border: 5px solid black;
+                background-color: rgb(12, 120, 123);
+               position: relative;
+               left: 50px;
+               top: 60px;
+               width: 60%; 
+              
+               font-weight: 900;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               
+
+               align-items: center;
+               /* justify-content: space-around; */
+            }
+            div.contact{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+               border: 5px solid black;
+              width: 200px;
+              height: 50px;
+              overflow: auto;
+            }
+            div.divider{
+                border: 5px solid black;
+
+                margin-top: 100px;
+                width: 800px;
+                height: 350px;
+                margin-left: auto;  
+                margin-right: auto;
+                position: relative;
+                
+            }
+          div.full{
+            margin-top: 200px;}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Company Contact Card</h1>
+    </header>
+    <div class="full">
+<div class="divider">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Walter_White_S5B.png/250px-Walter_White_S5B.png" alt="profile image" width="200" height="200">
+<div class="container">
+    <p style="text-align: center;">Name: Walter White</p>
+    <p style="text-align: center;">Position: CEO</p>
+    <p style="text-align: center;">Walter Hartwell White, also known by his alias Heisenberg, is a fictional character and the protagonist of the American crime drama television series Breaking Bad. He is portrayed by Bryan Cranston. Walter is a skilled chemist who co-founded a technology firm before he accepted a buy-out from his partners.</p>
+    </div>
+
+    <div class="contact">
+        <p><i class="bi bi-telephone"></i> 123-456-7890</p>
+        <p><i class="bi bi-envelope"></i> walter.white@company.com</p>
+    </div>
+    </div>
+</body>
+</html>
