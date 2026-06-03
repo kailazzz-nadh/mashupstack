@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         p::first-line{
+            font-weight: bold;
+         }
+         p::first-letter{
+            font-size: 50px;
+            color: rgb(255, 0, 0);
+         }
+         div.full>h3{
+           color: green;
+         }
+         a{
+            text-decoration: none;
+         }
+         /* a:first-child{
+            color: red;
+         } */
+         a:visited{
+            color: purple;
+         }
+         a:hover{
+            text-decoration: underline;
+          }
+          a:first-child{
+            color: red;
+          }
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p>Selectors are used to select the HTML elements that we want to style.<br> There are different types of selectors in CSS, including:1. Universal Selector:.The universal selector (*) selects all elements on the page.</p>
+    <p>1. Universal Selector: The universal selector (*) <br>selects all elements on the page.</p>
+    <div class="full">
+        <section> <h3> Type Selector</h3></section>
+        <h3>Class Selector</h3>
+    </div>
+    <ul>
+        <a href="https://www.imdb.com/title/tt0903747/" ><li>Link 1</li></a>
+        <a href="https://www.imdb.com/title/tt1877830/"><li>Link 2</li></a>
+        <a href="https://www.imdb.com/title/tt0371746/"><li>Link 3</li></a>
+    </ul>
+</body>
+</html>
