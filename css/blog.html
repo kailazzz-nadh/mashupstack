@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,h3{
+        align-self: center;
+    }
+    div.open{
+        border: 2px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:baseline;
+    }
+    p.intro::first-line{
+        font-weight: bold;
+    }
+    p.intro::first-letter{
+        font-size: 300%;
+        color: rgb(255, 0, 0);
+    }
+    p.quote::before{
+        content: open-quote;   
+        font-size: 300%;
+    }
+    p.quote::after{
+        content: close-quote;
+        font-size: 300%;
+    }
+    a{
+        color: rgb(0, 0, 255);
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(255, 0, 0);
+        text-decoration: underline;
+    }
+    a:active{
+        color: rgb(0, 255, 0);
+    }
+    a:visited{
+        color: rgb(255, 0, 255);
+    }
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    div.heading+h4{
+        color: rgb(255, 0, 0);
+    }
+    p.intro{
+        text-align: justify;
+    }
+    p.quote{
+        font-style: italic;
+        text-align: center;
+    }
+    
+</style>
+<div class="open">
+<body>
+    <h1>The Importance of Learning Web Development </h1>
+    <h3>author:Kailas</h3>
+    <p class="intro" >Web development begins with the basics of HTML, CSS, and JavaScript. HTML is used to structure web pages, CSS is used to style and design them, and JavaScript adds interactivity.<br> Together, these technologies help developers build responsive and user-friendly websites. As technology continues to evolve, web developers can also learn advanced frameworks and tools to create more powerful applications.
+<p class="quote">One of the biggest advantages of web development is the wide range of career opportunities it offers.Companies of all sizes require websites and web applications,creating a strong demand for skilled developers.Freelancing,remote work,and entrepreneurship are also possible career paths for web developers.Learning web development also improves problem-solving and creativity.Developers constantly face challenges that require logical thinking and innovative solutions.Building projects helps learners gain practical.</p>
+<div>
+    <a href="https://www.imdb.com/title/tt0903747/">View Movie on IMDb</a><br>
+    <a href="https://www.imdb.com/title/tt1877830/">View Batman on IMDb</a><br>
+    <a href="https://www.imdb.com/title/tt0468569/">View Joker on IMDb</a><br>
+</div>
+<div class="container">
+<div class="heading">
+    <h4>Conclusion</h4>
+   
+</div>
+ <h4>Thank you for reading!</h4>
+</div>
+</div>
+</body>
+</html>
