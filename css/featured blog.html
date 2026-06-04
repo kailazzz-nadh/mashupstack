@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            border-radius: 20px;
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+        /* .card{
+            text-align: center;
+        } */
+        
+        img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            
+           
+        }
+        [href^="https"]{
+            color:red;
+        }
+        [src$="jpg"]{
+           
+            border-radius: 20px;
+        }
+        @media  (max-width: 600px){
+            .container{
+                display: flex;
+                flex-direction: column;
+        
+            }
+            body{
+                
+                font-size: 10px;
+                background-color: rgb(225, 225, 27);
+            }
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+    <h1>Breaking Bad</h1><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AUQ1ap545wJq1Op_9GPLFAV15boesLoyZA&s" alt="btreaking"><br><br>
+    <a href="https://www.imdb.com/title/tt0903747/">Read more</a><br>
+</div>
+ <div class="card">
+    <h1>Iron Man</h1>
+    <img src="https://thumbs.dreamstime.com/b/iron-man-17900674.jpg" alt="ironman"><br>
+    <a href="https://www.imdb.com/title/tt0371746/mediaindex/">Read more</a>
+    </div>
+    <div class="card">
+    <h1>Bat Man</h1>
+    <img src="https://m.media-amazon.com/images/S/pv-target-images/5c5ed8fdc43ca703084920a6e06e943a5432f5ae8bc998ae954109a16988cbaf._SX1080_FMjpg_.jpg" alt="batman"><br>
+    <a href="https://www.imdb.com/title/tt1877830/">Read more</a>
+    </div>
+    </div>
+</body>
+</html>
