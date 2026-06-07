@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+   
+    .container{
+       position: absolute;
+       top: 0px;
+       bottom: 0px;
+       right: 0px;
+       left: 0px;
+    display:flex;
+    background:white;
+
+    }
+    .left{
+        flex: 1;
+         min-height: 400px;
+        background-image:url(iwant.png) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+        
+        
+    }
+    
+   
+     input[type="email"],input[type="password"]
+    {
+         width: 700px;
+         
+    padding:10px;
+    margin-right:50px ;
+    margin-top:5px;
+     margin-bottom:15px;
+
+    }
+   
+    h1{
+        color: brown;
+    }
+    .right{
+        flex: 1;
+        flex-direction: column;
+        padding: 40px;
+        display: flex;
+       justify-content: center;
+       /* align-items: center; */
+       
+       
+    }
+    button{
+    width: 700px;
+    
+    padding:10px;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+    background:#d97a5b;
+    color:white;
+    border: none;
+    }
+    @media(max-width:768px) {
+        .container{
+            flex-direction: column;
+        }
+        .left{
+            display: none;
+        }
+         input[type="email"],input[type="password"]
+    {
+         width: 400px;
+         height: 30px;
+         
+    padding:10px;
+    margin-right:50px ;
+    margin-top:5px;
+     margin-bottom:15px;
+
+        
+        
+    }
+    label[for="fname"],label[for=pword],label[for=cbox]{
+        font-size: 25px;
+    }
+     button{
+    width: 400px;
+    font-size: 25px;
+    
+    
+    padding:10px;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+    background:#d97a5b;
+    color:white;
+    border: none;
+     }
+    }
+
+   
+</style>
+<body>
+    
+        <div class="container">
+            <div class="left">
+                </div>
+                <div class="right">
+                    <div class="box">
+    <h1>Login Form</h1>
+    <form>
+        <label for="fname" style="font-weight: 900;">E-mail:</label><br><br>
+        <input type="email" id="fname" name="fname" ><br><br>
+         <label for="pword" style="font-weight: 900;">Password:</label><br><br>
+          <input type="password" id="pword" name="pword"><br><br>
+          
+        <input type="checkbox" id="cbox" name="cbox">
+         <label for="cbox">Remember Me</label><br><br>
+         <button>Login</button>
+         
+         
+
+
+    </form>
+                    </div>
+                </div>
+        </div>
+    
+</body>
+</html>
