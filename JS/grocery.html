@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grocery items</h1>
+    <p>Availabity:</p>
+    <p style="display: inline;">Sugar:</p>
+    <p id="sug" style="display: inline;"></p><br>
+    <p style="display: inline;">rice:</p>
+    <p id="ric" style="display: inline;"></p><br>
+    <p style="display: inline;">Wheat:</p>
+    <p id="whea" style="display: inline;"></p>
+     <script language="javascript" type="text/javascript">
+        var name=["sugar","rice","wheat"]
+        var price=[30,40,20]
+        var quantity=[3,2,4]
+        document.getElementById("sug").innerHTML=price[0]
+         document.getElementById("ric").innerHTML=price[1]
+          document.getElementById("whea").innerHTML=price[2]
+          console.log("cost for sugar=",price[0]*quantity[0])
+           console.log("cost for rice=",price[1]*quantity[1])
+            console.log("cost for wheat=",price[2]*quantity[2])
+             console.log("Total cost=",price[0]*quantity[0]+price[1]*quantity[1]+price[2]*quantity[2])
+
+ var newquantity=[3,2,3]
+           console.log("Total new cost=",price[0]*newquantity[0]+price[1]*newquantity[1]+price[2]*newquantity[2])
+
+
+         
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Store</h1>
+    <p >Number of caps sold:</p>
+    <p id="sold" style="display: inline;"></p>
+    <p>Number of tshirt sold:</p>
+    <p id="sold1"></p>
+    <p>Total earnings:</p>
+    <p id="earnings"></p>
+    <p>Updated Earnings:</p>
+    <p id="updated"></p>
+
+    <script language="javascript" type="text/javascript">
+        var caps = 3;
+        var tshirt = 5;        
+        document.getElementById("sold").innerHTML=caps;
+         document.getElementById("sold1").innerHTML=tshirt;
+         var capear = 150;
+         var tshirtear = 400;
+         document.getElementById("earnings").innerHTML=(caps*capear)+(tshirt*tshirtear);
+         var tshirtupd=450;
+          document.getElementById("updated").innerHTML=(caps*capear)+(tshirt*tshirtupd);
+
+
+
+    </script>
+</body>
+</html>
