@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Contact Info</h1>
+    <p id="rcb"></p>
+<p id="csk"></p>
+
+    <script language="javascript" type="text/javascript">
+     let contact1={name:"Ramesh",phone:8113896453,email:"ramesh@gmail.com",
+     getinfo:function(){return("Name:"+this.name+" "+"phone:"+this.phone+" "+"email:"+this.email)}
+    }
+    console.log(contact1.getinfo());
+    document.getElementById("rcb").innerHTML=(contact1.getinfo());
+    function printcontactinfo(contact){
+        console.log(contact.getinfo());
+        document.getElementById("csk").innerHTML+=contact.getinfo()+"<br>"+"<br>";
+        
+
+    }
+    printcontactinfo(contact1);
+     let contact2={name:"Suresh",phone:9998884445,email:"suresh@gmail.com",
+     getinfo:function(){return("Name:"+this.name+" "+"phone:"+this.phone+" "+"email:"+this.email)}
+    }
+    printcontactinfo(contact2)
+    </script>
+</body>
+</html>

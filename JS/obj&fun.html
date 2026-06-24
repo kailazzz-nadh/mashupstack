@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Saul Library</h1>
+     <p id="bsk"></p>
+    <script language="javascript" type="text/javascript">
+    let book={ title: "The Alchemist",author:"Paulo Coelho",year:1988,
+        
+         getsummary: function() { return ("The book" + this.title+ "was written by"+this.author+  "in" +this.year)}
+         
+        
+         
+    }
+    document.write(book.getsummary());
+   
+    function printbooksummary(bookobj){
+        document.getElementById('bsk').innerHTML=(bookobj.getsummary());
+        
+    }
+    printbooksummary(book);
+
+    
+
+   
+    </script>
+</body>
+</html>
