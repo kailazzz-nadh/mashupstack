@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Statistics Widget</h1>
+    <p id="demo"></p>
+    
+     <script language="javascript" type="text/javascript">
+        function getrand(){
+            return Math.floor(Math.random()*100)+1;
+
+        }
+        
+        var s= document.getElementById("demo").innerHTML=(getrand());
+        var uscore="75";
+        document.write(uscore + "<br>");
+        document.write(typeof(uscore)+"<br>");
+        var newscore=Number(uscore);
+        document.write(newscore+"<br>");
+        document.write(typeof(newscore)+"<br>");
+        var diff= s-newscore;
+        document.write("difference between random and score:"+diff+"<br>") ;
+        
+        document.write("root of score:"+Math.sqrt(newscore)+"<br>");
+        document.write("value of pi:"+Math.PI +"<br>");
+        document.write("product:"+"50"*2 +"<br>");
+
+
+
+
+
+
+     </script>
+    
+</body>
+</html>
