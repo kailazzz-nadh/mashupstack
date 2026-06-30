@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your Profile</h1>
+    <script language="javascript" type="text/javascript">
+        var name="Kailas";
+        var age=22;
+        var admin=true;
+        var old= (age>=18) && (admin==true) ? "Access granted": "Acess denied"
+         
+    let user={name:"Kailas",age:22,admin:true};
+    var s="age" in user;
+    console.log(s);
+    delete user.age;
+    var d="age" in user;
+    console.log(user);
+    console.log(d);
+        
+        
+    </script>
+    <button onclick="document.write(old)">Check</button><br>
+     
+
+
+</body>
+</html>

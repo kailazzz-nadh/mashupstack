@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Store</h1>
+    <button onclick="ordering.order()">order</button><br>
+    <script language="javascript" type="text/javascript">
+    let ordering={name:"sword",isdelivered:true,deliverdate:5,
+        order:function(){
+           var done=(this.isdelivered==true) && (this.deliverdate<=7) ? "Eligible for return": "Return period expired";
+           document.write(done)
+          
+           
+        }
+          
+      
+    }
+      var s=(ordering.name=="sword" ? "exist": "notexist");
+           document.write(s);  
+     delete ordering.deliverdate;
+     console.log(ordering)
+       
+    
+
+    </script>
+
+</body>
+</html>
