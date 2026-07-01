@@ -9,8 +9,8 @@
     <h1>Grocery list</h1>
     <p id="demo"></p>
     <script language="javascript" type="text/javascript">
-        var groceries=["milk","eggs","bread","butter"];
-        var price=[20,30,40,60];
+        var groceries=["milk","eggs","bread","butter","cheese"];
+        var price=[20,30,40,60,80];
         var len=groceries.length;
 
         var fil=price.map(myfunction);
@@ -26,7 +26,10 @@
         text+="</ul>";
         document.getElementById("demo").innerHTML=text;
         var over50 = groceries.filter(myFunction);
+
         document.write("items with price over 50:"+over50+"<br>"+"<br>");
+        
+
 function myFunction(value, index, array) {
     return price[index] > 50;
    

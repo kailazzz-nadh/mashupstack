@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Results</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script language="javascript" type="text/javascript">
+        var student=[{name:"Alice", score:20}, {name:"Bob", score:95}, {name:"Charlie", score:78}]
+        text=" ";
+        for(i=0;i<student.length;i++){
+            text+=student[i].name+" ";
+        }
+        document.getElementById("demo").innerHTML=text;
+        var over60=student.filter(myfunction);
+        function myfunction(value,index){
+            return value.score>60;
+        }
+         result=" ";
+        for(i=0;i<over60.length;i++){
+            result+=over60[i].name+" ";
+        }
+        document.getElementById("demo1").innerHTML=result;
+        var sum=student.reduce(sumfunction,0);
+        function sumfunction(total,value,index,array){
+            return total+value.score;
+        }
+      
+      document.getElementById("demo2").innerHTML="total score of all students:"+sum;
+      var pass=student.every(passfunction);
+        function passfunction(value,index,array){
+                return value.score>=35;
+            }
+            document.write("All students passed:"+pass+"<br>");
+            var above90=student.some(somefunction);
+            function somefunction(value,index,array){
+                return value.score>90;
+            }
+            document.write("At least one student scored above 90:"+above90);
+           
+
+function myfunction4() {
+  student.sort(function(a, b){return b.score - a.score});
+    document.getElementById("demo3").innerHTML =
+  student[0].name + " " + student[0].score + "<br>" +
+  student[1].name + " " + student[1].score + "<br>" +
+  student[2].name + " " + student[2].score;
+
+
+}
+
+   
+
+ myfunction4();
+
+
+    </script>
+</body>
+</html>
