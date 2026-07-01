@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grocery list</h1>
+    <p id="demo"></p>
+    <script language="javascript" type="text/javascript">
+        var groceries=["milk","eggs","bread","butter"];
+        var price=[20,30,40,60];
+        var len=groceries.length;
+
+        var fil=price.map(myfunction);
+     function myfunction(value,index){
+        document.write("item:"+groceries[index]+" ");
+        document.write("price:"+value+"<br>");
+        document.write("<br>");
+     }
+        text="<ul>";
+        for(i=0;i<len;i++){
+            text+="<li>"+groceries[i]+"</li>";
+        }
+        text+="</ul>";
+        document.getElementById("demo").innerHTML=text;
+        var over50 = groceries.filter(myFunction);
+        document.write("items with price over 50:"+over50+"<br>"+"<br>");
+function myFunction(value, index, array) {
+    return price[index] > 50;
+   
+   
+}
+var groceries1=groceries.push("watermelon");
+var price1=price.push(80);
+
+
+  var fil=price.map(myfunction);
+     function myfunction(value,index){
+        document.write("item:"+groceries[index]+" ");
+        document.write("price:"+value+"<br>");
+        document.write("<br>");
+     }
+     
+    </script>
+</body>
+</html>
