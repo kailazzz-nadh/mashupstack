@@ -48,11 +48,15 @@
 
 function myfunction4() {
   student.sort(function(a, b){return b.score - a.score});
-    document.getElementById("demo3").innerHTML =
-  student[0].name + " " + student[0].score + "<br>" +
-  student[1].name + " " + student[1].score + "<br>" +
-  student[2].name + " " + student[2].score;
-
+//     document.getElementById("demo3").innerHTML =
+//   student[0].name + " " + student[0].score + "<br>" +
+//   student[1].name + " " + student[1].score + "<br>" +
+//   student[2].name + " " + student[2].score;
+ text=" ";
+        for(i=0;i<student.length;i++){
+            text+=student[i].name+" "+student[i].score+"<br>";
+        }
+        document.getElementById("demo3").innerHTML=text;
 
 }
 

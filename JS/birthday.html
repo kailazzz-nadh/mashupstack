@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Birthday tracker</h1>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+    <script language="javascript" type="text/javascript">
+        let friend={name:"Alice", bday:"12/12/2000"};
+        function getbirthdaydetails(){
+            var name=friend.name;
+            var bday=friend.bday;
+            dat=new Date(bday);
+            document.write("Birthday:"+dat+"<br>");
+            document.getElementById("demo").innerHTML = dat.toDateString();
+            dat1=new Date();
+            var year=dat1.getFullYear();
+            var year2=dat.getFullYear();
+            var age=year-year2;
+            document.write("Age:"+age+"<br>");
+            document.getElementById("demo1").innerHTML=name+" "+"was born in"+" "+dat.toDateString()+" "+"and is"+" "+age+" "+"years old";
+
+            
+            
+            
+
+
+            
+        }
+        getbirthdaydetails()
+        
+
+        
+    </script>
+   
+</body>
+</html>
