@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Calculator</h1>
+    <script language="javascript" type="text/javascript">
+        var product=[{
+            code:"apple",
+            price: 30
+        },
+        {
+            code:"banana",
+            price: 10
+        },
+        {
+            code:"mango",
+            price: 50
+        }];
+        for(var i=0;i<=5;i++){
+            var code=prompt("Enter the product code");
+
+            var quantity=Number(prompt("Enter the quantity"));
+            document.write("<br>Product code: "+code);
+            document.write("<br>Quantity: "+quantity);
+           
+             switch(code){
+            case product[0].code:
+                var totalprice1=product[0].price*quantity;
+                 document.write("<br>"+"price: "+product[0].price);
+                document.write("<br>"+ "totalprice:apple:"+totalprice1+"<br>");
+                break;
+            case product[1].code:
+                var totalprice2=product[1].price*quantity;
+                document.write("<br>"+"price: "+product[1].price);
+                document.write("<br>"+ "totalprice:banana:"+totalprice2+"<br>");
+                break;
+            case product[2].code:
+                var totalprice3=product[2].price*quantity;
+                document.write("<br>"+"price: "+product[2].price);
+                document.write("<br>"+ "totalprice:mango:"+totalprice3+"<br>");
+                break;
+            default:
+                document.write("<br>Invalid product code");
+        }
+       
+        }
+         var grandtotal=totalprice1+totalprice2+totalprice3;
+        document.write("<br>"+ "Grand Total: "+grandtotal+"<br>");
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Game</h1>
+
+    <script>
+        var guessed = false;
+
+        for (var i = 0; i < 5; i++) {
+            var number = Number(prompt("Enter a number between 1 and 5"));
+
+            if (number > 5 || number < 1) {
+                document.write("<br>Invalid input");
+            }
+            else if (number == 3) {
+                document.write("<br>Congratulations! You guessed the correct number: " + number);
+                guessed = true;
+                break;
+            }
+            else {
+                document.write("<br>Wrong guess, try again: " + number);
+            }
+             switch(number){
+        case 1:
+            document.write("<br>the number u entered is one");
+            break;
+        case 2:
+            document.write("<br>the number u entered is two");
+            break;
+        case 3:
+            document.write("<br>the number u entered is three");
+            break;
+        case 4:
+            document.write("<br>the number u entered is four");
+            break;
+        case 5:
+            document.write("<br>the number u entered is five");
+            break;
+        default:
+            document.write("<br>Invalid input");
+    }
+        }
+
+        if (!guessed) {
+            document.write("<br>Game Over");
+        }
+        
+    </script>
+   
+
+</body>
+</html>
