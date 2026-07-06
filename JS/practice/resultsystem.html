@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your Result</h1>
+    <script language="javascript" type="text/javascript">
+        var students = ["Rahul", "Anu", "Kiran", "Meera"];
+        var marks = [78, 92, 65, 88];
+        var merge=[];
+        for(i=0;i<students.length;i++){
+            merge.push("student:"+students[i]+"-mark:"+marks[i])
+        }
+        tex=""
+        len=merge.length
+        for(i=0;i<len;i++){
+            tex+=merge[i]+"<br>";
+        }
+        document.write(tex)
+        
+      var fil=students.filter(myfunction);
+       function myfunction(value,index){
+        console.log(value,index,marks[index])
+        return marks[index]>80;
+      }
+      document.write(fil);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    
+     <p id="demo1"></p>
+    <script language="javascript" type="text/javascript">
+        let student={name:"Kailas",age:22,grade:"A",
+            getdetails: function(){
+               return this.name+" is "+this.age+" years old and scored grade "+this.grade;
+
+            }
+        };
+
+        function printstudentdetails(studentobj){
+            document.getElementById("demo1").innerHTML=studentobj.getdetails();
+        }
+        printstudentdetails(student);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Directory</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script language="javascript" type="text/javascript">
+        let employee1={name:"Suresh",designation:"manager",salary:1000,
+           getdetails: function(){
+            return this.name+"work as the"+this.designation+ "of this company with a salary of"+this.salary;
+
+           }
+           
+
+        }
+        function getemployeedetails(employee,id){
+            document.getElementById(id).innerHTML=employee.getdetails();
+            
+             
+        }
+
+       
+    getemployeedetails(employee1,"demo");
+    let employee2={name:"Rames",designation:"sales",salary:100,
+           getdetails: function(){
+            return this.name+ "work as the"+ this.designation+ "of this company with a salary of"+ this.salary;
+
+           }
+
+        }
+         
+        
+         getemployeedetails(employee2,"demo1");
+         
+           
+        
+    </script>
+</body>
+</html>
