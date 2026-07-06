@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comment Filtering</h1>
+    <script language="javascript" type="text/javascript">
+        var str= "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great."
+        
+        var txt = str.replace(/(bad|stupid)/gi,"***");
+        var num= /\d/g
+        var result=str.match(num)
+        
+        document.write(txt+"<br>")
+        document.write("count of numbers:"+result.length+"<br>")
+        var caps=/\b[A-Z]/g
+        var capsilo=str.match(caps)
+        document.write("count of capital starting:"+capsilo.length)
+        
+        
+
+    </script>
+</body>
+</html>
