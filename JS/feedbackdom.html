@@ -11,8 +11,9 @@
          <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your feedback"></textarea><br><br>
          <input type="button" onclick="submitFeedback()" value="Submit Feedback"><br><br>
     </form>
-    <p id="demo"></p>
+    <p id="demo" onmouseover="mOver(this)" onmouseout="mOut(this)"></p>
     <p id="demo1"></p>
+    
     <script language="javascript" type="text/javascript">
         function submitFeedback(){
             var name=document.getElementById("name").value;
@@ -27,6 +28,12 @@
                 } 
            
            }
+            function mOver(element){
+           element.style.color = "blue";
+      }
+      function mOut(element){
+           element.style.color = "black";
+      }
            
                 
             
