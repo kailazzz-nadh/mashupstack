@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+         <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+         <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your feedback"></textarea><br><br>
+         <input type="button" onclick="submitFeedback()" value="Submit Feedback"><br><br>
+    </form>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script language="javascript" type="text/javascript">
+        function submitFeedback(){
+            var name=document.getElementById("name").value;
+            var feedback=document.getElementById("feedback").value;
+            document.getElementById("demo").innerHTML="Thank you "+name+" for your feedback: "+feedback;
+             
+                document.getElementById("demo1").innerHTML="Thankyou for your feedback"
+                document.getElementById("demo1").style.color="green"
+               var timeout=setTimeout(alert,5000)
+                function alert(){
+                    document.getElementById("demo1").innerHTML=""
+                } 
+           
+           }
+           
+                
+            
+           
+        
+        
+        
+    </script>
+</body>
+</html>
