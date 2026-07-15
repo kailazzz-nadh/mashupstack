@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="num"  id="num" placeholder="Enter the first number"><br><br>
+        <input type="number" name="num" id="num1" placeholder="Enter the second number"><br><br>
+        <label for="operator">Select the operator</label>
+        <select id="operator" name="operator">
+            <option value="">Select an Operator</option>
+            <option value="addition">+(Add)</option>
+            <option value="subract">-(subract)</option>
+            <option value="multiply">*(Multipy)</option>
+            <option value="divide">/(Divide)</option>
+            
+
+        </select>
+        <input type="button" onclick="calculator()" value="="><br><br>
+        
+
+    </form>
+    <h3 id="result"></h3>
+    <script language="javascript" type="text/javascript">
+        function add(a,b){
+            return a+b;
+        }
+
+        function subract(a,b){
+            return a-b;
+        }
+         function multiply(a,b){
+            return a*b;
+        }
+         function divide(a,b){
+            if(b==0){
+                return "cannot divide by 0"
+            }
+            else{
+            return a/b;
+            }
+        }
+        function printResult(ans){
+    document.getElementById("result").innerHTML="Result : "+ans;
+}
+function calculator(){
+    var num1=Number(document.getElementById("num").value)
+    var num2=Number(document.getElementById("num1").value)
+    var operator=document.getElementById("operator").value
+    var answer;
+    if(operator=="addition"){
+        answer=add(num1,num2)
+    }
+    else if(operator=="subract"){
+        answer=subract(num1,num2)
+    }
+     else if(operator=="multiply"){
+       answer= multiply(num1,num2)
+    }
+     else if(operator=="divide"){
+        answer=divide(num1,num2)
+    }
+    else{
+        answer="please select an operator"
+        
+
+    }
+    printResult(answer);
+    
+}
+
+
+
+
+    </script>
+</body>
+</html>

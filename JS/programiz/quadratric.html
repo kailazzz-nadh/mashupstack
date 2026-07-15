@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script language="javascript" type="text/javascript">
+        var a=Number(prompt("Enter the first number:"));
+         var b=Number(prompt("Enter the second number:"));
+          var c=Number(prompt("Enter the third number:"));
+        var discriminant=b*b-4*a*c;
+        if(discriminant>0){
+            root1=(-b+Math.sqrt(discriminant))/(2*a);
+            root2=(-b-Math.sqrt(discriminant))/(2*a);
+        document.getElementById("demo").innerHTML="Result 1 is"+root1+"Result 2 is "+root2
+
+        }
+        
+        else if (discriminant==0){
+            root1=root2= -b/(2*a);
+             document.getElementById("demo1").innerHTML="Result 1 is"+root1+"and"+root2
+
+        }
+        else{
+             var realpart=(-b/(2*a)).toFixed(2)
+              var imgpart=(Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+              document.getElementById("demo2").innerHTML="The results are"+realpart+"+"+imgpart+"i and"+realpart+"-"+imgpart
+
+
+        }
+
+    </script>
+</body>
+</html>

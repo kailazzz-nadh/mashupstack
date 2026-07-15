@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script language="javascript" type="text/javascript">
+        var c=Number(prompt("Enter the celsius"))
+        var f=(c*1.8)+32
+        document.getElementById("demo").innerHTML="when"+c+"degree celsius is converted to fahrenheit it is"+f;
+        document.write("The random number is"+Math.floor((Math.random()*10)+1)+"<br>")
+        var a=Number(prompt("Enter the number"))
+        if (a>0){
+             document.write(a+"is a positive number"+"<br>")
+        }
+         else if (a<0){
+             document.write(a+"is a negative number"+"<br>")
+         }
+         else{
+             document.write(a+"is zero"+"<br>")
+         }
+
+         if(a/2==0){
+            document.write(a+"is even"+"<br>")
+
+
+         }
+         else{
+            document.write(a+"is odd"+"<br>")
+         }
+         var e=Number(prompt("Enter 1st numbers"))
+         var f=Number(prompt("Enter 2nd numbers"))
+         var g=Number(prompt("Enter 3rd numbers"))
+          if (e>f && e>g){
+            document.write(e+"is greater")
+
+          }
+           else if (f>e && f>g){
+            document.write(f+"is greater")
+
+          }
+           else{
+            document.write(g+"is greater")
+
+          }
+
+
+           
+    </script>
+</body>
+</html>
