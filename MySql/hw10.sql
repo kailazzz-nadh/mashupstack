@@ -1,0 +1,3 @@
+INSERT INTO authors (author_id, author_name, email) VALUES(1, 'Chetan Bhagat', 'chetan.bhagat@example.com'),(2, 'Amish Tripathi', 'amish.tripathi@example.com'),(3, 'Sudha Murty', 'sudha.murty@example.com'),(4, 'Ruskin Bond', 'ruskin.bond@example.com'),(5, 'Arundhati Roy', 'arundhati.roy@example.com');
+CREATE TABLE books(book_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,book_title VARCHAR(25) NOT NULL,author_id INT NOT NULL, FOREIGN KEY (author_id)REFERENCES authors(author_id));
+INSERT INTO books (book_id, book_title, author_id) VALUES(101, 'Five Point Someone', 1),(102, 'The 3 Mistakes of My Life', 1),(103, 'The Immortals of Meluha', 2),(104, 'Wise and otherwise',4);
