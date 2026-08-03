@@ -1,0 +1,6 @@
+CREATE TABLE `inventory_system`.`authors` (`AUTHOR_ID` INT(25) NOT NULL AUTO_INCREMENT , `NAME` VARCHAR(25) NOT NULL , PRIMARY KEY (`AUTHOR_ID`)) ENGINE = InnoDB;
+CREATE TABLE `inventory_system`.`books` (`BOOK_ID` INT(25) NOT NULL AUTO_INCREMENT , `title` VARCHAR(25) NOT NULL , `author_id` INT(25) NOT NULL , PRIMARY KEY (`BOOK_ID`)) ENGINE = InnoDB;
+ALTER TABLE BOOKS ADD INDEX IND(author_id);
+ALTER TABLE BOOKS ADD FOREIGN KEY(author_id) REFERENCES authors(author_id);
+INSERT INTO `authors` (`AUTHOR_ID`, `NAME`) VALUES (1, 'J.K. Rowling'), (2, 'George Orwell'), (3, 'Jane Austen'), (4, 'Mark Twain'), (5, 'Agatha Christie'), (6, 'Ernest Hemingway');
+INSERT INTO `books` (`BOOK_ID`, `title`, `author_id`) VALUES (1, 'Harry Potter and the Philosopher''s Stone', 1), (2, 'Harry Potter and the Chamber of Secrets', 1), (3, '1984', 2), (4, 'Animal Farm', 2), (5, 'Pride and Prejudice', 3), (6, 'Sense and Sensibility', 3), (7, 'Adventures of Huckleberry Finn', 4), (8, 'The Adventures of Tom Sawyer', 4);
